@@ -14,4 +14,4 @@ endif::[]
 :docinfo: shared-head
 
 include::common/overview.adoc[]
-include::product/product.adoc[]
+include::challengegroup/challenge-group.adoc[]
