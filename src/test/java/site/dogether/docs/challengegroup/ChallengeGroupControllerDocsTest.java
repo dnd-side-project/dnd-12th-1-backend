@@ -17,6 +17,7 @@ import static site.dogether.docs.util.DocumentLinkGenerator.DocUrl.CHALLENGE_GRO
 import static site.dogether.docs.util.DocumentLinkGenerator.DocUrl.CHALLENGE_GROUP_START_AT_OPTION;
 import static site.dogether.docs.util.DocumentLinkGenerator.generateLink;
 
+@DisplayName("챌린지 그룹 API 문서화 테스트")
 public class ChallengeGroupControllerDocsTest extends RestDocsSupport {
 
     @Override
