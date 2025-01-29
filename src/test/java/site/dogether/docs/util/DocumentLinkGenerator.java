@@ -7,7 +7,9 @@ public final class DocumentLinkGenerator {
     }
 
     public enum DocUrl {
-        PRODUCT_CATEGORY("product-category", "상품 카테고리");
+        CHALLENGE_GROUP_START_AT_OPTION("challenge-group-start-at-option", "그룹 시작일 옵션"),
+        CHALLENGE_GROUP_DURATION_OPTION("challenge-group-duration-option", "그룹 진행 기간 옵션"),
+        ;
 
         private final String fileName;
         private final String title;

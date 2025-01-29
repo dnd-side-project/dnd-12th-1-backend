@@ -36,10 +36,12 @@ public class CommonDocsControllerTest extends RestDocsSupport {
 
         result.andExpect(status().isOk())
             .andDo(createDocument(
-                customResponseFields("custom-response", beneathPath("productCategory"),
-                    attributes(key("title").value("productCategory")),
-                    convertEnumToFieldDescriptor((enumDocs.getProductCategory()))
-                )
+                customResponseFields("custom-response", beneathPath("challengeGroupStartAtOption"),
+                    attributes(key("title").value("challengeGroupStartAtOption")),
+                    convertEnumToFieldDescriptor((enumDocs.getChallengeGroupStartAtOption()))),
+                customResponseFields("custom-response", beneathPath("challengeGroupDurationOption"),
+                    attributes(key("title").value("challengeGroupDurationOption")),
+                    convertEnumToFieldDescriptor((enumDocs.getChallengeGroupDurationOption())))
             ));
     }
 

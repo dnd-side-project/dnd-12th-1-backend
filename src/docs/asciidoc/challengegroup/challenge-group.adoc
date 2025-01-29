@@ -1,0 +1,109 @@
+[[challenge-group-api]]
+== Challenge Group API
+
+[[create-challenge-group]]
+=== 챌린지 그룹 생성
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/challenge-group-controller-docs-test/create-challenge-group/http-request.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/create-challenge-group/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/challenge-group-controller-docs-test/create-challenge-group/http-response.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/create-challenge-group/response-fields.adoc[]
+
+[[join-challenge-group]]
+=== 챌린지 그룹 참여
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/challenge-group-controller-docs-test/join-challenge-group/http-request.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/join-challenge-group/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/challenge-group-controller-docs-test/join-challenge-group/http-response.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/join-challenge-group/response-fields.adoc[]
+
+[[get-joining-challenge-group-info]]
+=== 참여중인 그룹 정보 조회
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-info/http-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-info/http-response.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-info/response-fields.adoc[]
+
+[[get-joining-challenge-group-my-activity-summary]]
+=== 참여중인 그룹의 내 누적 활동 통계 조회
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-my-activity-summary/http-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-my-activity-summary/http-response.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-my-activity-summary/response-fields.adoc[]
+
+[[get-joining-challenge-group-team-activity-summary]]
+=== 참여중인 그룹의 팀원 전체 누적 활동 통계 조회
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-team-activity-summary/http-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-team-activity-summary/http-response.adoc[]
+include::{snippets}/challenge-group-controller-docs-test/get-joining-challenge-group-team-activity-summary/response-fields.adoc[]

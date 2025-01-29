@@ -4,16 +4,25 @@ import java.util.Map;
 
 public class EnumDocs {
 
-    Map<String, String> productCategory;
+    Map<String, String> challengeGroupStartAtOption;
+    Map<String, String> challengeGroupDurationOption;
 
     public EnumDocs() {
     }
 
-    public EnumDocs(final Map<String, String> productCategory) {
-        this.productCategory = productCategory;
+    public EnumDocs(
+        final Map<String, String> challengeGroupStartAtOption,
+        final Map<String, String> challengeGroupDurationOption
+    ) {
+        this.challengeGroupStartAtOption = challengeGroupStartAtOption;
+        this.challengeGroupDurationOption = challengeGroupDurationOption;
     }
 
-    public Map<String, String> getProductCategory() {
-        return productCategory;
+    public Map<String, String> getChallengeGroupStartAtOption() {
+        return challengeGroupStartAtOption;
+    }
+
+    public Map<String, String> getChallengeGroupDurationOption() {
+        return challengeGroupDurationOption;
     }
 }
