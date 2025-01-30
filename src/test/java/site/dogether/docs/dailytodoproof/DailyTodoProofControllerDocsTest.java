@@ -44,7 +44,7 @@ public class DailyTodoProofControllerDocsTest extends RestDocsSupport {
                 pathParameters(
                     parameterWithName("todoProofId")
                         .description("데일리 투두 인증 id")
-                        .attributes(constraints("등록된 데일리 투두 인증 id만 입력 가능"))),
+                        .attributes(constraints("등록된 데일리 투두 인증 id만 입력 가능"), pathVariableExample(todoProofId))),
                 requestFields(
                     fieldWithPath("result")
                         .description(generateLink(DAILY_TODO_PROOF_REVIEW_RESULT))
@@ -114,7 +114,7 @@ public class DailyTodoProofControllerDocsTest extends RestDocsSupport {
                 pathParameters(
                     parameterWithName("todoProofId")
                         .description("데일리 투두 인증 id")
-                        .attributes(constraints("등록된 데일리 투두 인증 id만 입력 가능"))),
+                        .attributes(constraints("등록된 데일리 투두 인증 id만 입력 가능"), pathVariableExample(todoProofId))),
                 responseFields(
                     fieldWithPath("code")
                         .description("응답 코드")
