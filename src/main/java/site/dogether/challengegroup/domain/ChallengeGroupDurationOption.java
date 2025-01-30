@@ -1,10 +1,10 @@
 package site.dogether.challengegroup.domain;
 
 import lombok.RequiredArgsConstructor;
-import site.dogether.common.constant.EnumType;
+import site.dogether.common.docs.RestDocsEnumType;
 
 @RequiredArgsConstructor
-public enum ChallengeGroupDurationOption implements EnumType {
+public enum ChallengeGroupDurationOption implements RestDocsEnumType {
 
     THREE_DAYS(3, "3일"),
     SEVEN_DAYS(7, "7일"),
