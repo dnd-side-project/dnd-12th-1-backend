@@ -1,10 +1,10 @@
 package site.dogether.challengegroup.domain;
 
 import lombok.RequiredArgsConstructor;
-import site.dogether.common.constant.EnumType;
+import site.dogether.common.docs.RestDocsEnumType;
 
 @RequiredArgsConstructor
-public enum ChallengeGroupStartAtOption implements EnumType {
+public enum ChallengeGroupStartAtOption implements RestDocsEnumType {
 
     TODAY("오늘부터"),
     TOMORROW("내일부터")

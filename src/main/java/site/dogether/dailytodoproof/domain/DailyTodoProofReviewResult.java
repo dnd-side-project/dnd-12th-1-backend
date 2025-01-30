@@ -1,10 +1,10 @@
 package site.dogether.dailytodoproof.domain;
 
 import lombok.RequiredArgsConstructor;
-import site.dogether.common.constant.EnumType;
+import site.dogether.common.docs.RestDocsEnumType;
 
 @RequiredArgsConstructor
-public enum DailyTodoProofReviewResult implements EnumType {
+public enum DailyTodoProofReviewResult implements RestDocsEnumType {
     APPROVE("인정"),
     REJECT("노인정")
     ;
