@@ -39,11 +39,14 @@ public class CommonDocsControllerTest extends RestDocsSupport {
         result.andExpect(status().isOk())
             .andDo(createDocument(
                 customResponseFields("custom-response", beneathPath("challengeGroupStartAtOption"),
-                    attributes(key("title").value("challengeGroupStartAtOption")),
+                    attributes(key("title").value("그룹 시작일 옵션")),
                     convertEnumToFieldDescriptor((enumDocs.getChallengeGroupStartAtOption()))),
                 customResponseFields("custom-response", beneathPath("challengeGroupDurationOption"),
-                    attributes(key("title").value("challengeGroupDurationOption")),
-                    convertEnumToFieldDescriptor((enumDocs.getChallengeGroupDurationOption())))
+                    attributes(key("title").value("그룹 진행 기간 옵션")),
+                    convertEnumToFieldDescriptor((enumDocs.getChallengeGroupDurationOption()))),
+                customResponseFields("custom-response", beneathPath("dailyTodoProofReviewResult"),
+                    attributes(key("title").value("데일리 투두 수행 인증 검사 결과 옵션")),
+                    convertEnumToFieldDescriptor((enumDocs.getDailyTodoProofReviewResult())))
             ));
     }
 

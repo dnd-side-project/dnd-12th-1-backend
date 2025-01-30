@@ -15,3 +15,5 @@ endif::[]
 
 include::common/overview.adoc[]
 include::challengegroup/challenge-group.adoc[]
+include::dailytodo/daily-todo.adoc[]
+include::dailytodoproof/daily-todo-proof.adoc[]

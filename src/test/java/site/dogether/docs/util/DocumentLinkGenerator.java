@@ -9,6 +9,7 @@ public final class DocumentLinkGenerator {
     public enum DocUrl {
         CHALLENGE_GROUP_START_AT_OPTION("challenge-group-start-at-option", "그룹 시작일 옵션"),
         CHALLENGE_GROUP_DURATION_OPTION("challenge-group-duration-option", "그룹 진행 기간 옵션"),
+        DAILY_TODO_PROOF_REVIEW_RESULT("daily-todo-proof-review-result", "데일리 투두 수행 인증 검사 결과 옵션"),
         ;
 
         private final String fileName;

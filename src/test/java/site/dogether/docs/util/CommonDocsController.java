@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import site.dogether.challengegroup.domain.ChallengeGroupDurationOption;
 import site.dogether.challengegroup.domain.ChallengeGroupStartAtOption;
 import site.dogether.common.constant.EnumType;
+import site.dogether.dailytodoproof.domain.DailyTodoProofReviewResult;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -20,7 +21,8 @@ public class CommonDocsController {
     public EnumDocs findEnums() {
         final Map<String, String> challengeGroupStartAtOption = convertToMap(ChallengeGroupStartAtOption.values());
         final Map<String, String> challengeGroupDurationOption = convertToMap(ChallengeGroupDurationOption.values());
-        return new EnumDocs(challengeGroupStartAtOption, challengeGroupDurationOption);
+        final Map<String, String> dailyTodoProofReviewResult = convertToMap(DailyTodoProofReviewResult.values());
+        return new EnumDocs(challengeGroupStartAtOption, challengeGroupDurationOption, dailyTodoProofReviewResult);
     }
 
     private Map<String, String> convertToMap(final EnumType[] enumTypes) {

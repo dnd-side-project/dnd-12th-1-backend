@@ -1,0 +1,45 @@
+[[daily-todo-api]]
+== Daily Todo API
+
+[[create-daily-todos]]
+=== 데일리 투두 작성
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/http-request.adoc[]
+include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/http-response.adoc[]
+include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/response-fields.adoc[]
+
+[[get-yesterday-daily-todos]]
+=== 어제 작성한 투두 내용 조회
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/daily-todo-controller-docs-test/get-yesterday-daily-todos/http-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/daily-todo-controller-docs-test/get-yesterday-daily-todos/http-response.adoc[]
+include::{snippets}/daily-todo-controller-docs-test/get-yesterday-daily-todos/response-fields.adoc[]
