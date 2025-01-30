@@ -1,7 +1,7 @@
-package site.dogether.common.docs;
+package site.dogether.docs.util;
 
 public interface RestDocsEnumType {
 
     String getDescription();
-    String getValue();
+    String getRequestValue();
 }

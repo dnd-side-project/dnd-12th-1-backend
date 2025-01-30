@@ -1,27 +1,15 @@
 package site.dogether.challengegroup.domain;
 
 import lombok.RequiredArgsConstructor;
-import site.dogether.common.docs.RestDocsEnumType;
 
 @RequiredArgsConstructor
-public enum ChallengeGroupDurationOption implements RestDocsEnumType {
+public enum ChallengeGroupDurationOption {
 
-    THREE_DAYS(3, "3일"),
-    SEVEN_DAYS(7, "7일"),
-    FOURTEEN_DAYS(14, "14일"),
-    TWENTY_EIGHT_DAYS(28, "28일")
+    THREE_DAYS(3),
+    SEVEN_DAYS(7),
+    FOURTEEN_DAYS(14),
+    TWENTY_EIGHT_DAYS(28)
     ;
 
-    private final int days;
-    private final String description;
-
-    @Override
-    public String getDescription() {
-        return this.description;
-    }
-
-    @Override
-    public String getValue() {
-        return String.valueOf(this.days);
-    }
+    private final int value;
 }
