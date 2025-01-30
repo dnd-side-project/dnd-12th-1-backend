@@ -1,5 +1,5 @@
 [[daily-todo-api]]
-== Daily Todo API
+== 데일리 투두 API
 
 [[create-daily-todos]]
 === 데일리 투두 작성

@@ -1,5 +1,5 @@
 [[challenge-group-api]]
-== Challenge Group API
+== 챌린지 그룹 API
 
 [[create-challenge-group]]
 === 챌린지 그룹 생성
