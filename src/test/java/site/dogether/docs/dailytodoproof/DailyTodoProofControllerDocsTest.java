@@ -91,7 +91,7 @@ public class DailyTodoProofControllerDocsTest extends RestDocsSupport {
                         .description("수행 인증 본문")
                         .type(JsonFieldType.STRING),
                     fieldWithPath("data.todoProofs[].proofMediaUrls")
-                        .description("수행 인증한 투두 내용")
+                        .description("인증에 포함된 미디어 리소스")
                         .type(JsonFieldType.ARRAY)
                         .optional(),
                     fieldWithPath("data.todoProofs[].todoContent")
@@ -129,7 +129,7 @@ public class DailyTodoProofControllerDocsTest extends RestDocsSupport {
                         .description("수행 인증 본문")
                         .type(JsonFieldType.STRING),
                     fieldWithPath("data.proofMediaUrls")
-                        .description("수행 인증한 투두 내용")
+                        .description("인증에 포함된 미디어 리소스")
                         .type(JsonFieldType.ARRAY)
                         .optional(),
                     fieldWithPath("data.todoContent")
