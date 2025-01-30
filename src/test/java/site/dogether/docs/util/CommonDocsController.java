@@ -18,10 +18,14 @@ public class CommonDocsController {
 
     @GetMapping("/enums")
     public EnumDocs findEnums() {
-        final Map<String, String> challengeGroupStartAtOption = convertToMap(ChallengeGroupStartAtOptionDocs.values());
-        final Map<String, String> challengeGroupDurationOption = convertToMap(ChallengeGroupDurationOptionDocs.values());
-        final Map<String, String> dailyTodoProofReviewResult = convertToMap(DailyTodoProofReviewResultDocs.values());
-        return new EnumDocs(challengeGroupStartAtOption, challengeGroupDurationOption, dailyTodoProofReviewResult);
+        final Map<String, String> challengeGroupStartAtOption = convertToMap(ChallengeGroupStartAtOptionDocs.getValues());
+        final Map<String, String> challengeGroupDurationOption = convertToMap(ChallengeGroupDurationOptionDocs.getValues());
+        final Map<String, String> dailyTodoProofReviewResult = convertToMap(DailyTodoProofReviewResultDocs.getValues());
+        return EnumDocs.builder()
+                   .challengeGroupStartAtOption(challengeGroupStartAtOption)
+                   .challengeGroupDurationOption(challengeGroupDurationOption)
+                   .dailyTodoProofReviewResult(dailyTodoProofReviewResult)
+                   .build();
     }
 
     private Map<String, String> convertToMap(final RestDocsEnumType[] restDocsEnumTypes) {

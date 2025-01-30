@@ -2,6 +2,7 @@ package site.dogether.docs.challengegroup.enumtype;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import site.dogether.challengegroup.domain.ChallengeGroupDurationOption;
 import site.dogether.docs.util.RestDocsEnumType;
 
 @Getter
@@ -14,6 +15,14 @@ public enum ChallengeGroupDurationOptionDocs implements RestDocsEnumType {
     TWENTY_EIGHT_DAYS("28일", "28")
     ;
 
+    private static final int enumValueCount = ChallengeGroupDurationOption.values().length;
+
     private final String description;
     private final String requestValue;
+
+    public static RestDocsEnumType[] getValues() {
+        final ChallengeGroupDurationOptionDocs[] values = ChallengeGroupDurationOptionDocs.values();
+        RestDocsEnumType.checkDocsValueCountIsEqualToEnumValueCount(enumValueCount, values.length);
+        return values;
+    }
 }
