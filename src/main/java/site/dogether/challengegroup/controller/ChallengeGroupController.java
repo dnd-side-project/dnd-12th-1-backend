@@ -58,8 +58,8 @@ public class ChallengeGroupController {
                 new GetJoiningChallengeGroupTeamActivitySummaryResponse(
                     40, 30, 20,
                     List.of(
-                        new GetJoiningChallengeGroupTeamActivitySummaryResponse.Rank(1, "양성욱"),
-                        new GetJoiningChallengeGroupTeamActivitySummaryResponse.Rank(2, "김영재"),
-                        new GetJoiningChallengeGroupTeamActivitySummaryResponse.Rank(3, "문지원")))));
+                        new GetJoiningChallengeGroupTeamActivitySummaryResponse.Rank(1, "양성욱", 100, 100),
+                        new GetJoiningChallengeGroupTeamActivitySummaryResponse.Rank(2, "김영재", 82, 76),
+                        new GetJoiningChallengeGroupTeamActivitySummaryResponse.Rank(3, "문지원", 68, 50)))));
     }
 }

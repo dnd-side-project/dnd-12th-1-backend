@@ -10,6 +10,8 @@ public record GetJoiningChallengeGroupTeamActivitySummaryResponse(
 ) {
     public record Rank(
         int rank,
-        String name
+        String name,
+        int certificationRate,
+        int approvalRate
     ) {}
 }
