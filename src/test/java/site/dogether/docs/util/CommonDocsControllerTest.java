@@ -44,9 +44,9 @@ public class CommonDocsControllerTest extends RestDocsSupport {
                 customResponseFields("custom-response", beneathPath("challengeGroupDurationOption"),
                     attributes(key("title").value("그룹 진행 기간 옵션")),
                     convertEnumToFieldDescriptor((enumDocs.getChallengeGroupDurationOption()))),
-                customResponseFields("custom-response", beneathPath("dailyTodoProofReviewResult"),
+                customResponseFields("custom-response", beneathPath("dailyTodoCertificationReviewResult"),
                     attributes(key("title").value("데일리 투두 수행 인증 검사 결과 옵션")),
-                    convertEnumToFieldDescriptor((enumDocs.getDailyTodoProofReviewResult())))
+                    convertEnumToFieldDescriptor((enumDocs.getDailyTodoCertificationReviewResult())))
             ));
     }
 

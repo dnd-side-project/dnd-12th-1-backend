@@ -1,0 +1,68 @@
+[[daily-todo-certification-api]]
+== 데일리 투두 수행 인증 API
+
+[[review-daily-todo-certification]]
+=== 데일리 투두 수행 인증 검사
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/daily-todo-certification-controller-docs-test/review-daily-todo-certification/http-request.adoc[]
+include::{snippets}/daily-todo-certification-controller-docs-test/review-daily-todo-certification/path-parameters.adoc[]
+include::{snippets}/daily-todo-certification-controller-docs-test/review-daily-todo-certification/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/daily-todo-certification-controller-docs-test/review-daily-todo-certification/http-response.adoc[]
+include::{snippets}/daily-todo-certification-controller-docs-test/review-daily-todo-certification/response-fields.adoc[]
+
+[[get-daily-todo-certifications-for-review]]
+=== 검사할 투두 수행 인증 전체 조회
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certifications-for-review/http-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certifications-for-review/http-response.adoc[]
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certifications-for-review/response-fields.adoc[]
+
+[[get-daily-todo-certification-for-review-by-id]]
+=== 검사할 특정 투두 수행 인증 상세 조회
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certification-for-review-by-id/http-request.adoc[]
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certification-for-review-by-id/path-parameters.adoc[]
+
+==== HTTP Response
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certification-for-review-by-id/http-response.adoc[]
+include::{snippets}/daily-todo-certification-controller-docs-test/get-daily-todo-certification-for-review-by-id/response-fields.adoc[]
