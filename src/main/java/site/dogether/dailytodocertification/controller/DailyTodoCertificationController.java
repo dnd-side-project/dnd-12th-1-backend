@@ -31,7 +31,7 @@ public class DailyTodoCertificationController {
                 List.of(
                     new DailyTodoCertificationResponse(
                         1L,
-                        "나 진짜진짜 열심히 했어... ㄹㅇ...",
+                        "이 노력, 땀 그 모든것이 내 노력의 증거입니다. 양심 있으면 인정 누르시죠.",
                         List.of(
                             "https://dogether-bucket-dev.s3.ap-northeast-2.amazonaws.com/daily-todo-proof-media/mock/e1.png",
                             "https://dogether-bucket-dev.s3.ap-northeast-2.amazonaws.com/daily-todo-proof-media/mock/e2.png"),
@@ -52,7 +52,7 @@ public class DailyTodoCertificationController {
             new GetDailyTodoCertificationForReviewByIdResponse(
                 new DailyTodoCertificationResponse(
                     1L,
-                    "나 진짜진짜 열심히 했어... ㄹㅇ...",
+                    "이 노력, 땀 그 모든것이 내 노력의 증거입니다. 양심 있으면 인정 누르시죠.",
                     List.of(
                         "https://dogether-bucket-dev.s3.ap-northeast-2.amazonaws.com/daily-todo-proof-media/mock/e1.png",
                         "https://dogether-bucket-dev.s3.ap-northeast-2.amazonaws.com/daily-todo-proof-media/mock/e2.png"),

@@ -2,14 +2,14 @@ package site.dogether.dailytodo.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import site.dogether.dailytodo.controller.request.CertifyDailyTodoRequest;
 import site.dogether.common.controller.response.ApiResponse;
 import site.dogether.dailytodo.controller.request.CreateDailyTodosRequest;
 import site.dogether.dailytodo.controller.request.GetYesterdayDailyTodosResponse;
 
 import java.util.List;
 
-import static site.dogether.dailytodo.controller.response.DailyTodoSuccessCode.CREATE_DAILY_TODOS;
-import static site.dogether.dailytodo.controller.response.DailyTodoSuccessCode.GET_YESTERDAY_DAILY_TODOS;
+import static site.dogether.dailytodo.controller.response.DailyTodoSuccessCode.*;
 
 @RequestMapping("/api/todos")
 @RestController()
@@ -21,11 +21,12 @@ public class DailyTodoController {
         return ResponseEntity.ok(ApiResponse.success(CREATE_DAILY_TODOS));
     }
 
-    /**
-     * 클라이언트 미디어 전달 방식이 결정되면 작성
-     */
-//    @PostMapping("/{todoId}/certificate")
-//    public ResponseEntity<ApiResponse<>>
+    @PostMapping("/{todoId}/certify")
+    public ResponseEntity<ApiResponse<Void>> certifyDailyTodo(
+        @PathVariable final Long todoId,
+        @RequestBody final CertifyDailyTodoRequest request) {
+        return ResponseEntity.ok(ApiResponse.success(CERTIFY_DAILY_TODO));
+    }
 
     @GetMapping("/my/yesterday")
     public ResponseEntity<ApiResponse<GetYesterdayDailyTodosResponse>> getYesterdayDailyTodos() {
