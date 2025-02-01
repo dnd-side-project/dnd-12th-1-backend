@@ -8,5 +8,8 @@ public record GetJoiningChallengeGroupTeamActivitySummaryResponse(
     int totalApprovedCount,
     List<Rank> ranking
 ) {
-    public record Rank(int rank, String name) {}
+    public record Rank(
+        int rank,
+        String name
+    ) {}
 }
