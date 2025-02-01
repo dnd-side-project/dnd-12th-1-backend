@@ -1,0 +1,46 @@
+[[notification-api]]
+== 푸시 알림 API
+
+[[save-notification-token]]
+=== 푸시 알림 토큰 저장
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/notification-controller-docs-test/save-notification-token/http-request.adoc[]
+include::{snippets}/notification-controller-docs-test/save-notification-token/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/notification-controller-docs-test/save-notification-token/http-response.adoc[]
+include::{snippets}/notification-controller-docs-test/save-notification-token/response-fields.adoc[]
+
+[[delete-notification-token]]
+=== 푸시 알림 토큰 삭제
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/notification-controller-docs-test/delete-notification-token/http-request.adoc[]
+include::{snippets}/notification-controller-docs-test/delete-notification-token/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/notification-controller-docs-test/delete-notification-token/http-response.adoc[]
+include::{snippets}/notification-controller-docs-test/delete-notification-token/response-fields.adoc[]
