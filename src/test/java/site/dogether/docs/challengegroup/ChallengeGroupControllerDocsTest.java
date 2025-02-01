@@ -191,6 +191,12 @@ public class ChallengeGroupControllerDocsTest extends RestDocsSupport {
                         .type(JsonFieldType.NUMBER),
                     fieldWithPath("data.ranking[].name")
                         .description("그룹원 이름")
-                        .type(JsonFieldType.STRING))));
+                        .type(JsonFieldType.STRING),
+                    fieldWithPath("data.ranking[].certificationRate")
+                        .description("데일리 투두 인증률")
+                        .type(JsonFieldType.NUMBER),
+                    fieldWithPath("data.ranking[].approvalRate")
+                        .description("데일리 투두 인정률")
+                        .type(JsonFieldType.NUMBER))));
     }
 }
