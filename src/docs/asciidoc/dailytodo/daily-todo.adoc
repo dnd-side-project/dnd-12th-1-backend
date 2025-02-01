@@ -23,6 +23,29 @@ include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/request-f
 include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/http-response.adoc[]
 include::{snippets}/daily-todo-controller-docs-test/create-daily-todos/response-fields.adoc[]
 
+[[certify-daily-todo]]
+=== 데일리 투두 수행 인증
+
+==== 개발 상태
+|===
+| 환경 | 구현 여부
+
+| 개발
+| X
+
+| 운영
+| X
+|===
+
+==== HTTP Request
+include::{snippets}/daily-todo-controller-docs-test/certify-daily-todo/http-request.adoc[]
+include::{snippets}/daily-todo-controller-docs-test/certify-daily-todo/path-parameters.adoc[]
+include::{snippets}/daily-todo-controller-docs-test/certify-daily-todo/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/daily-todo-controller-docs-test/certify-daily-todo/http-response.adoc[]
+include::{snippets}/daily-todo-controller-docs-test/certify-daily-todo/response-fields.adoc[]
+
 [[get-yesterday-daily-todos]]
 === 어제 작성한 투두 내용 조회
 
