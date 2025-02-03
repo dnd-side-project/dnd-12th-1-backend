@@ -34,7 +34,7 @@ public class FcmNotificationSender implements NotificationSender {
     private List<String> findFcmTokens(final MemberJpaEntity recipient) {
         return notificationTokenJpaRepository.findAllByMember(recipient)
             .stream()
-            .map(NotificationTokenJpaEntity::getValue)
+            .map(NotificationTokenJpaEntity::getTokenValue)
             .toList();
     }
 

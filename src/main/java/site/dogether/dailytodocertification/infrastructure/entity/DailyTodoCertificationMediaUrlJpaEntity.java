@@ -20,20 +20,20 @@ public class DailyTodoCertificationMediaUrlJpaEntity extends BaseTimeEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     private DailyTodoCertificationJpaEntity dailyTodoCertification;
 
-    @Column(name = "value", length = 500, nullable = false)
-    private String value;
+    @Column(name = "url_value", length = 500, nullable = false)
+    private String urlValue;
 
-    public DailyTodoCertificationMediaUrlJpaEntity(final DailyTodoCertificationJpaEntity dailyTodoCertification, final String value) {
-        this(null, dailyTodoCertification, value);
+    public DailyTodoCertificationMediaUrlJpaEntity(final DailyTodoCertificationJpaEntity dailyTodoCertification, final String urlValue) {
+        this(null, dailyTodoCertification, urlValue);
     }
 
     public DailyTodoCertificationMediaUrlJpaEntity(
         final Long id,
         final DailyTodoCertificationJpaEntity dailyTodoCertification,
-        final String value
+        final String urlValue
     ) {
         this.id = id;
         this.dailyTodoCertification = dailyTodoCertification;
-        this.value = value;
+        this.urlValue = urlValue;
     }
 }

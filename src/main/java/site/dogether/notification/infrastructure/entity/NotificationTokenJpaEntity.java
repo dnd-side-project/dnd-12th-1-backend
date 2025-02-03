@@ -21,20 +21,20 @@ public class NotificationTokenJpaEntity extends BaseTimeEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     private MemberJpaEntity member;
 
-    @Column(name = "value", length = 500, nullable = false, unique = true)
-    private String value;
+    @Column(name = "token_value", length = 500, nullable = false, unique = true)
+    private String tokenValue;
 
-    public NotificationTokenJpaEntity(final MemberJpaEntity member, final String value) {
-        this(null, member, value);
+    public NotificationTokenJpaEntity(final MemberJpaEntity member, final String tokenValue) {
+        this(null, member, tokenValue);
     }
 
     public NotificationTokenJpaEntity(
         final Long id,
         final MemberJpaEntity member,
-        final String value
+        final String tokenValue
     ) {
         this.id = id;
         this.member = member;
-        this.value = value;
+        this.tokenValue = tokenValue;
     }
 }
