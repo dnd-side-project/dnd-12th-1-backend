@@ -2,6 +2,8 @@ package site.dogether.notification.infrastructure.firebase.sender;
 
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingException;
+import com.google.firebase.messaging.Message;
+import com.google.firebase.messaging.Notification;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -55,5 +57,21 @@ public class FcmNotificationSender implements NotificationSender {
 
     private boolean checkInvalidFcmTokenResponse(final String errorResponse) {
         return errorResponse.contains("The registration token is not a valid FCM registration token");
+    }
+
+    /**
+     * 클라이언트 개발용
+     */
+    public void testSendNotification(final String token, final String title, final String body) {
+        final Notification notification = Notification.builder()
+                                              .setTitle(title)
+                                              .setBody(body)
+                                              .build();
+        final Message message = Message.builder()
+                                    .setNotification(notification)
+                                    .setToken(token)
+                                    .build();
+
+        sendPushNotification(new FcmMessageWithToken(message, token));
     }
 }

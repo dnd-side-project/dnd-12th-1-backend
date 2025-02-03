@@ -1,0 +1,13 @@
+[[developer-test-api]]
+== 개발자 테스트용 API
+
+[[send-notification]]
+=== 푸시 알림 테스트
+
+==== HTTP Request
+include::{snippets}/developer-test-notification-controller-docs-test/send-notification/http-request.adoc[]
+include::{snippets}/developer-test-notification-controller-docs-test/send-notification/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/developer-test-notification-controller-docs-test/send-notification/http-response.adoc[]
+include::{snippets}/developer-test-notification-controller-docs-test/send-notification/response-fields.adoc[]
