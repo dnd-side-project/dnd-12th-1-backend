@@ -50,7 +50,7 @@ public class FcmNotificationSender implements NotificationSender {
 
     private void handleInvalidFcmToken(final String errorResponse, final String fcmToken) {
         if (checkInvalidFcmTokenResponse(errorResponse)) {
-            notificationTokenJpaRepository.deleteAllByValue(fcmToken);
+            notificationTokenJpaRepository.deleteAllByTokenValue(fcmToken);
             log.info("유효하지 않은 FCM 토큰 제거 - {}", fcmToken);
         }
     }

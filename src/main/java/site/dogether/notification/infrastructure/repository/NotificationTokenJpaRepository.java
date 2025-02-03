@@ -10,5 +10,5 @@ public interface NotificationTokenJpaRepository extends JpaRepository<Notificati
 
     List<NotificationTokenJpaEntity> findAllByMember(MemberJpaEntity member);
 
-    void deleteAllByValue(String value);
+    void deleteAllByTokenValue(String value);
 }
