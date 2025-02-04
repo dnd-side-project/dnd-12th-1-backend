@@ -34,7 +34,7 @@ public class FcmNotificationSender implements NotificationSender {
     private List<String> findFcmTokens(final MemberJpaEntity recipient) {
         return notificationTokenJpaRepository.findAllByMember(recipient)
             .stream()
-            .map(NotificationTokenJpaEntity::getTokenValue)
+            .map(NotificationTokenJpaEntity::getValue)
             .toList();
     }
 
@@ -50,7 +50,7 @@ public class FcmNotificationSender implements NotificationSender {
 
     private void handleInvalidFcmToken(final String errorResponse, final String fcmToken) {
         if (checkInvalidFcmTokenResponse(errorResponse)) {
-            notificationTokenJpaRepository.deleteAllByTokenValue(fcmToken);
+            notificationTokenJpaRepository.deleteAllByValue(fcmToken);
             log.info("유효하지 않은 FCM 토큰 제거 - {}", fcmToken);
         }
     }
