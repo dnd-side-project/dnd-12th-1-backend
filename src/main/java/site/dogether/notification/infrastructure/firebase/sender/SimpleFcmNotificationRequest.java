@@ -2,7 +2,6 @@ package site.dogether.notification.infrastructure.firebase.sender;
 
 import com.google.firebase.messaging.Message;
 import com.google.firebase.messaging.Notification;
-import site.dogether.member.infrastructure.entity.MemberJpaEntity;
 
 import java.util.List;
 
@@ -12,11 +11,11 @@ public class SimpleFcmNotificationRequest extends FcmNotificationRequest {
     private final String body;
 
     public SimpleFcmNotificationRequest(
-        final MemberJpaEntity recipient,
+        final Long recipientId,
         final String title,
         final String body
     ) {
-        super(recipient);
+        super(recipientId);
         this.title = title;
         this.body = body;
     }

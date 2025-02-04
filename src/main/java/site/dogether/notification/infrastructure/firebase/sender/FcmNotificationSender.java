@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import site.dogether.member.infrastructure.entity.MemberJpaEntity;
 import site.dogether.notification.infrastructure.entity.NotificationTokenJpaEntity;
 import site.dogether.notification.infrastructure.repository.NotificationTokenJpaRepository;
 import site.dogether.notification.sender.NotificationRequest;
@@ -27,12 +26,12 @@ public class FcmNotificationSender implements NotificationSender {
     @Override
     public void send(final NotificationRequest request) {
         final FcmNotificationRequest fcmNotificationRequest = (FcmNotificationRequest) request;
-        final List<String> fcmTokens = findFcmTokens(fcmNotificationRequest.getRecipient());
+        final List<String> fcmTokens = findFcmTokens(fcmNotificationRequest.getRecipientId());
         fcmNotificationRequest.convertFcmMessages(fcmTokens).forEach(this::sendPushNotification);
     }
 
-    private List<String> findFcmTokens(final MemberJpaEntity recipient) {
-        return notificationTokenJpaRepository.findAllByMember(recipient)
+    private List<String> findFcmTokens(final Long recipientId) {
+        return notificationTokenJpaRepository.findAllByMember_Id(recipientId)
             .stream()
             .map(NotificationTokenJpaEntity::getValue)
             .toList();
