@@ -179,7 +179,7 @@ gradle-app.setting
 local.env
 
 # docker data
-/data
+/docker/data
 
 # custom sh
 /sh
