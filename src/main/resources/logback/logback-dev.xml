@@ -1,7 +1,7 @@
 <configuration>
     <!-- 공통 변수 지정 -->
     <property name="FILE_LOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss,Asia/Seoul}] [dev] [%thread] %-5level [%C.%M:%L] - %msg%n"/>
-    <property name="LOGS_ROOT_PATH" value="logs"/>
+    <property name="LOGS_ROOT_PATH" value="/logs"/>
 
     <!-- TRACE 로그 설정 -->
     <appender name="TRACE_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
