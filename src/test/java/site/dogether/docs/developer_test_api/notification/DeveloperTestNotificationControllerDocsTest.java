@@ -9,7 +9,7 @@ import site.dogether.developer_test_api.notification.SendNotificationRequest;
 import site.dogether.docs.util.RestDocsSupport;
 import site.dogether.notification.infrastructure.firebase.sender.FcmNotificationSender;
 
-import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
 import static org.springframework.restdocs.payload.PayloadDocumentation.*;
@@ -31,7 +31,7 @@ public class DeveloperTestNotificationControllerDocsTest extends RestDocsSupport
     void sendNotification() throws Exception {
         final SendNotificationRequest request = new SendNotificationRequest("client-fcm-token-value", "푸시 알림 제목", "푸시 알림 바디");
 
-        doNothing().when(fcmNotificationSender).testSendNotification(anyString(), anyString(), anyString());
+        doNothing().when(fcmNotificationSender).send(any());
 
         mockMvc.perform(
                 post("/api/send-notification")

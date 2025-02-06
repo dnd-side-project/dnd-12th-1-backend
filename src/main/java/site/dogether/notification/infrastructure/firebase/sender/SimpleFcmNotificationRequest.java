@@ -3,36 +3,27 @@ package site.dogether.notification.infrastructure.firebase.sender;
 import com.google.firebase.messaging.Message;
 import com.google.firebase.messaging.Notification;
 
-import java.util.List;
-
 public class SimpleFcmNotificationRequest extends FcmNotificationRequest {
 
     private final String title;
     private final String body;
 
     public SimpleFcmNotificationRequest(
-        final Long recipientId,
+        final String fcmToken,
         final String title,
         final String body
     ) {
-        super(recipientId);
+        super(fcmToken);
         this.title = title;
         this.body = body;
     }
 
     @Override
-    public List<FcmMessageWithToken> convertFcmMessages(final List<String> tokens) {
-        return tokens.stream()
-                   .map(this::convertFcmMessage)
-                   .toList();
-    }
-
-    private FcmMessageWithToken convertFcmMessage(final String token) {
-        final Message message = Message.builder()
-                                  .setNotification(createNotification())
-                                  .setToken(token)
-                                  .build();
-        return new FcmMessageWithToken(message, token);
+    public Message convertFcmMessage() {
+        return Message.builder()
+                   .setNotification(createNotification())
+                   .setToken(fcmToken)
+                   .build();
     }
 
     private Notification createNotification() {

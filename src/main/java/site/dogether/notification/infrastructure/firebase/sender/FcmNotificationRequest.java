@@ -1,16 +1,15 @@
 package site.dogether.notification.infrastructure.firebase.sender;
 
+import com.google.firebase.messaging.Message;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import site.dogether.notification.sender.NotificationRequest;
-
-import java.util.List;
 
 @Getter
 @RequiredArgsConstructor
 public abstract class FcmNotificationRequest implements NotificationRequest {
 
-    public final Long recipientId;
+    public final String fcmToken;
 
-    abstract List<FcmMessageWithToken> convertFcmMessages(final List<String> tokens);
+    abstract Message convertFcmMessage();
 }
